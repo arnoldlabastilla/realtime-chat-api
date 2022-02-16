@@ -19,7 +19,8 @@ class Message extends JsonResource
             'convo_id' => $this->conversation_id,
             'content' => $this->content,
             'sender' => [
-                'name' => $this->sender->name
+                'name' => $this->sender->name,
+                'email' => $this->sender->email
             ]
         ];
     }

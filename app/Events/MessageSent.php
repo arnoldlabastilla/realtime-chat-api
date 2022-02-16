@@ -44,7 +44,8 @@ class MessageSent implements ShouldBroadcast
             'convo_id' => $this->message->conversation_id,
             'content' => $this->message->content,
             'sender' => [
-                'name' => $this->message->sender->name
+                'name' => $this->message->sender->name,
+                'email' => $this->message->sender->email
             ]
         ];
     }
